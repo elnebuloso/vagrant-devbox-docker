@@ -5,7 +5,7 @@ require "yaml"
 setting = YAML.load_file "vagrant.yml"
 
 Vagrant.configure(2) do |config|
-    config.vm.box = "bento/ubuntu-16.04"
+    config.vm.box = "ubuntu/xenial64"
 
     config.vm.hostname = setting['vm_hostname']
     config.vm.network "private_network", ip: setting.fetch('vm_private_ip', "192.168.33.100");
@@ -15,10 +15,6 @@ Vagrant.configure(2) do |config|
         v.gui = setting.fetch('vm_gui', false);
     end
 
-    # config.vbguest.auto_update = setting['vm_vbguest_auto_update']
-    # config.vbguest.no_remote = setting['vm_vbguest_no_remote']
-
-    config.vm.provision "shell", inline: "sudo rm -f /var/lib/dpkg/lock"
     config.vm.provision "shell", path: "provision/001-keys.sh"
     config.vm.provision "shell", path: "provision/002-ansible.sh"
 

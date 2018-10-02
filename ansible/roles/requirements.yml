@@ -7,6 +7,14 @@
 - src: elnebuloso.package-upgrade
   version: 1.0.0
 
+# https://galaxy.ansible.com/elnebuloso/docker/
+- src: elnebuloso.docker
+  version: 4.0.0
+
+# https://galaxy.ansible.com/elnebuloso/docker-compose/
+- src: elnebuloso.docker-compose
+  version: 1.0.0
+
 ################################################################################################
 
 # https://galaxy.ansible.com/geerlingguy/ntp/

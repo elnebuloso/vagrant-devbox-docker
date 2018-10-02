@@ -8,5 +8,7 @@
     - role: elnebuloso.package-upgrade
 
     - role: geerlingguy.ntp
+    - role: elnebuloso.docker
+    - role: elnebuloso.docker-compose
 
     - role: elnebuloso.package-cleanup
