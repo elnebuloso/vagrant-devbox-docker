@@ -15,6 +15,10 @@
 - src: elnebuloso.docker-compose
   version: 1.0.0
 
+# https://galaxy.ansible.com/elnebuloso/docker-pip/
+- src: elnebuloso.docker-pip
+  version: 1.0.0
+
 ################################################################################################
 
 # https://galaxy.ansible.com/geerlingguy/ntp/

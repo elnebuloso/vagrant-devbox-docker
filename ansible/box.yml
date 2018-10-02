@@ -10,5 +10,13 @@
     - role: geerlingguy.ntp
     - role: elnebuloso.docker
     - role: elnebuloso.docker-compose
+    - role: elnebuloso.docker-pip
 
     - role: elnebuloso.package-cleanup
+
+  post_tasks:
+    - docker_login:
+        registry_url: "{{item.docker_login_registry_url}}"
+        username: "{{item.docker_login_username}}"
+        password: "{{item.docker_login_password}}"
+      with_items: "{{docker_logins}}"
