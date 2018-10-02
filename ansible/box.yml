@@ -1,0 +1,12 @@
+---
+- hosts: all
+
+  vars_files:
+    - ../vagrant.yml
+
+  roles:
+    - role: elnebuloso.package-upgrade
+
+    - role: geerlingguy.ntp
+
+    - role: elnebuloso.package-cleanup

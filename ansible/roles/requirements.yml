@@ -1,0 +1,14 @@
+---
+# https://galaxy.ansible.com/elnebuloso/package-cleanup/
+- src: elnebuloso.package-cleanup
+  version: 1.0.0
+
+# https://galaxy.ansible.com/elnebuloso/package-upgrade/
+- src: elnebuloso.package-upgrade
+  version: 1.0.0
+
+################################################################################################
+
+# https://galaxy.ansible.com/geerlingguy/ntp/
+- src: geerlingguy.ntp
+  version: 1.6.2
