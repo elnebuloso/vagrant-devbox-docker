@@ -4,4 +4,4 @@
 
 Virtual Box Vagrant Docker Development Box
 
-![Release](https://img.shields.io/badge/-out%20of%20support-red.svg)
+![Release](https://img.shields.io/badge/-abandoned-red.svg)
